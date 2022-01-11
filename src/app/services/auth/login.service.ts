@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {environment} from "../../../environments/environment";
 
@@ -12,6 +12,16 @@ export class LoginService {
   login(data: any): Observable<any> {
     return this.http.post(
       environment.api_url + "/login", data
+    )
+  }
+  setHeader() {
+    let token = JSON.parse(<string>localStorage.getItem("token"))
+    return new HttpHeaders().set('Authorization', "Bearer" + token)
+  }
+
+  logout(): Observable<any> {
+    return this.http.post(
+      environment.api_url + "/logout", null, {headers: this.setHeader()}
     )
   }
 }

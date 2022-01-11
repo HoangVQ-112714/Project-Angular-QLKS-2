@@ -1,1 +1,118 @@
-<p>house-detail works!</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+<!--  <link rel="stylesheet" href="./assets/css/style.css">-->
+<!--  <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">-->
+</head>
+<body>
+<div id="product-detail">
+  <div class="slideshow"></div>
+  <div class="main-product">
+    <div class="product-detail">
+      <div class="main-product-detail">
+        <div class="title">
+          <h2>{{house.name}}</h2>
+        </div>
+        <div class="about">
+          <p><i class="abicon ti-location-pin"></i>{{house.address}}</p>
+          <br>
+          <p><i class="abicon ti-direction"></i> {{house.category}}</p>
+        </div>
+        <div class="table-detail">
+          <p>{{house.description}}</p>
+          <br>
+          <p><strong>Thông tin chi tiết</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th class="image-title">Hình ảnh</th>
+                <th>Số phòng ngủ</th>
+                <th>Số phòng tắm</th>
+                <th>Giá thuê theo ngày</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><img class="image-show"
+                       src="https://www.sgv.edu.vn/uploads/images/info/con-cho-tieng-nhat-la-gi.png"
+                       alt=""></td>
+              <td>{{house.bedroom}}</td>
+              <td>{{house.bathroom}}</td>
+              <td>{{house.price | currency: "VND"}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="furniture">
+          <h4>Tiện nghi chỗ ở</h4>
+          <p>Giới thiệu về các tiện nghi và dịch vụ tại nơi lưu trú </p>
+          <div class="show-furniture">
+            <p class="show-furniture-title">Tiện ích</p>
+            <table class="show-furniture-table">
+              <tr>
+                <td><i class="icon ti-rss-alt"></i>Wifi</td>
+                <td><i class="icon ti-desktop"></i>TV</td>
+                <td><i class="icon ti-cloud"></i>Điều hoà</td>
+              </tr>
+              <tr>
+                <td><i class="icon ti-widget"></i>Máy giặt</td>
+                <td><i class="icon ti-info-alt"></i>Dầu gội, dầu xả</td>
+                <td><i class="icon ti-info-alt"></i>Giấy vệ sinh</td>
+              </tr>
+              <tr>
+                <td><i class="icon ti-themify-favicon-alt"></i>Khăn tắm</td>
+                <td><i class="icon ti-face-smile"></i>Kem đánh răng</td>
+                <td><i class="icon ti-paint-bucket"></i>Xà phòng tắm</td>
+              </tr>
+              <tr>
+                <td><i class="icon ti-bolt"></i>Máy sấy</td>
+                <td><i class="icon ti-rss"></i>Internet</td>
+                <td><i class=""></i></td>
+              </tr>
+            </table>
+          </div>
+          <div class="show-furniture">
+            <p class="show-furniture-title">Tiện ích bếp</p>
+            <table class="show-furniture-table">
+              <tr>
+                <td><i class="icon ti-reload"></i>Bếp điện</td>
+                <td><i class="icon ti-harddrives"></i>Tủ lạnh</td>
+                <td><i class=""></i></td>
+              </tr>
+            </table>
+          </div>
+          <div class="show-furniture">
+            <p class="show-furniture-title">Tiện ích phòng</p>
+            <table class="show-furniture-table">
+              <tr>
+                <td><i class="icon ti-microsoft"></i>Ban Công</td>
+                <td><i class=""></i></td>
+                <td><i class=""></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-order">
+      <div class="main-form">
+        <form class="show-form-in-form" action="">
+          <h2 class="money">200.000đ/đêm</h2>
+          <br>
+          <div class="day-to-day">
+            <input class="date-to-date" type="date"> đến <input class="date-to-date" type="date">
+          </div>
+          <button class="success-order"><i class="ti-themify-favicon"></i><strong> Đặt ngay</strong></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

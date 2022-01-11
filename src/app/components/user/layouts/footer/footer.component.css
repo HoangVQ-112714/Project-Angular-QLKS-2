@@ -1,0 +1,59 @@
+/* Reset Css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* OTHER */
+.line-big {
+  height: 15px;
+}
+
+.line-big-2 {
+  height: 25px;
+}
+
+#content>.content-login>h2,
+#content>.content-address-top>h2,
+#content>.content-voucher>h2,
+#content>.content-blog>h2 {
+  font-size: 30px;
+}
+
+#content>.content-login>p,
+#content>.content-address-top>p,
+#content>.content-voucher>p,
+#content>.content-blog>p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* ---OTHER */
+
+/* FOOTER */
+#footer {
+  position: relative;
+  /* background-color: red; */
+  height: 130px;
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+#footer .footer-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ---FOOTER */

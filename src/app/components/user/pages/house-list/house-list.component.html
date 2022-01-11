@@ -1,1 +1,45 @@
-<p>house-list works!</p>
+<!-- CONTENT -->
+<div id="content-homestay">
+  <div class="button-choice">
+    <button>Hủy phòng linh hoạt</button>
+    <button>Đặt phòng nhanh</button>
+    <button>Giá ưu đãi</button>
+    <button>Khu vực</button>
+    <button>Loại phòng</button>
+    <button>Giá chỗ ở</button>
+    <button>Thêm bộ lọc</button>
+  </div>
+  <div class="line-big-2"></div>
+  <div class="description">
+    <p><strong>Trước khi đặt phòng, hãy kiểm tra những địa điểm bị hạn chế du lịch trong thời gian
+      này.</strong> Sức khỏe và sự an toàn của cộng đồng luôn được đặt hàng đầu. Vì vậy, vui lòng làm
+      theo chỉ thị của chính phủ bởi điều đó thực sự cần thiết.</p>
+  </div>
+  <div class="line-big-2"></div>
+  <div class="show-homestay">
+    <div class="district">
+      <h2>Danh sách Homestay</h2>
+      <div class="line-big"></div>
+      <div class="address-top-area">
+
+        <div class="show-product" *ngFor="let house of houses; index as i">
+          <div routerLink="{{house.id}}" class="address-area-01a">
+            <img
+              src="https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png">
+          </div>
+          <div class="content-under-image">
+            <h5>{{house.name}}</h5>
+            <div class="line-big"></div>
+            <p>{{house.address}}</p>
+            <p style="text-align: center"><strong>{{house.price| currency: "VND"
+              }}</strong></p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+  <!-- ---CONTENT -->
+</div>

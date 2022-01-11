@@ -1,0 +1,114 @@
+/* Reset Css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* OTHER */
+.line-big {
+  height: 15px;
+}
+
+.line-big-2 {
+  height: 25px;
+}
+
+#content>.content-login>h2,
+#content>.content-address-top>h2,
+#content>.content-voucher>h2,
+#content>.content-blog>h2 {
+  font-size: 30px;
+}
+
+#content>.content-login>p,
+#content>.content-address-top>p,
+#content>.content-voucher>p,
+#content>.content-blog>p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* ---OTHER */
+
+/* HEADING */
+#heading {
+  background-color: white;
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+  /* position: relative; */
+  /* position: fixed; */
+  text-transform: uppercase;
+}
+
+
+/* Logo */
+#heading .header-logo {
+  background-color: rgba(128, 128, 128, 0.411);
+  height: 64px;
+  width: 64px;
+  float: left;
+  margin: 7px 7%;
+  border-radius: 90px;
+  text-align: center;
+}
+
+#heading .header-logo-1 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 7px;
+  border-radius: 90px;
+}
+
+.header-logo-1 h3{
+  color: white;
+  font-size:35px;
+}
+
+#heading .header-logo-1:hover{
+  background-color:red;
+}
+
+/* ---Logo */
+
+/* Menu */
+.header-menu {
+  font-size: 20px;
+  float: right;
+  margin-right: 7%;
+}
+
+.menu-content>li {
+  line-height: 78px;
+  list-style-type: none;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+.menu-content li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-content>li>.admin {
+  color: rgb(23, 23, 114);
+}
+
+.menu-content li:hover {
+  border-bottom: 1px solid rgb(30, 30, 124);
+}
+
+/* ---Menu */
+/* ---HEADING */

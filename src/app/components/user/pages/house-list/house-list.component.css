@@ -1,0 +1,246 @@
+/* Reset Css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* OTHER */
+.line-big {
+  height: 15px;
+}
+
+.line-big-2 {
+  height: 25px;
+}
+
+#content>.content-login>h2,
+#content>.content-address-top>h2,
+#content>.content-voucher>h2,
+#content>.content-blog>h2 {
+  font-size: 30px;
+}
+
+#content>.content-login>p,
+#content>.content-address-top>p,
+#content>.content-voucher>p,
+#content>.content-blog>p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* ---OTHER */
+
+/* HEADING */
+#heading {
+  background-color: white;
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+  /* position: relative; */
+  /* position: fixed; */
+  text-transform: uppercase;
+}
+
+
+/* Logo */
+#heading .header-logo {
+  background-color: rgba(128, 128, 128, 0.411);
+  height: 64px;
+  width: 64px;
+  float: left;
+  margin: 7px 7%;
+  border-radius: 90px;
+  text-align: center;
+}
+
+#heading .header-logo-1 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 7px;
+  border-radius: 90px;
+}
+
+.header-logo-1 h3 {
+  color: white;
+  font-size: 35px;
+}
+
+#heading .header-logo-1:hover {
+  background-color: red;
+}
+
+/* ---Logo */
+
+/* Menu */
+.header-menu {
+  font-size: 20px;
+  float: right;
+  margin-right: 7%;
+}
+
+.menu-content>li {
+  line-height: 78px;
+  list-style-type: none;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+.menu-content li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-content>li>.admin {
+  color: rgb(23, 23, 114);
+}
+
+.menu-content li:hover {
+  border-bottom: 1px solid rgb(30, 30, 124);
+}
+
+/* ---Menu */
+/* ---HEADING */
+
+/* CONTENT */
+#content-homestay {
+  position: relative;
+  margin: 20px 7%;
+  /* background-color: red; */
+  height: 1070px;
+}
+
+#content-homestay .button-choice {
+  /* background-color: blue; */
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#content-homestay .button-choice button {
+  height: 35px;
+  padding: 0 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#content-homestay .button-choice button:hover {
+  background-color: rgb(36, 190, 131);
+  color: white;
+}
+
+#content-homestay .description {
+  /* background-color:yellow; */
+  padding: 10px 0;
+  font-size: 17px;
+}
+
+#content-homestay .show-homestay {
+  /* background-color:blue; */
+}
+
+/* Address-top-area */
+#content>.content-address-top {
+  position: absolute;
+  top: 340px;
+  width: 100%;
+}
+
+.address-top-area {
+  position: absolute;
+  /* background-color: red; */
+  width: 100%;
+  height: 300px;
+}
+
+.address-top-area .show-product {
+  position: relative;
+  width: 19.37%;
+  height: 450px;
+  border-radius: 10px;
+  background-size: cover;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  display: inline-block;
+  /* background-color: red; */
+}
+
+.address-top-area .show-product {
+  margin-left: 0.5%;
+}
+
+.address-top-area .address-area-01a {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  border-radius: 10px;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.address-top-area .address-area-01a {
+  /* background-image: url(https://cdn.luxstay.com/home/location/location_1_1559734709.png); */
+
+}
+
+.address-top-area .address-area-01a>img{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.address-top-area .content-under-image {
+  position: absolute;
+  color: black;
+  top: 55%;
+  left: 0.5%;
+  padding: 5px 0 10px 10px;
+  width: 100%;
+  background-color: rgba(155, 149, 70, 0.055);
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.content-under-image>h2 {
+  font-size: 27px;
+}
+
+.content-under-image>p {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+/* ---Address-top-area */
+/* ---CONTENT */
+
+/* FOOTER */
+#footer {
+  position: relative;
+  top: 900px;
+  /* background-color: red; */
+  height: 130px;
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+#footer .footer-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ---FOOTER */
