@@ -1,1 +1,54 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxstay</title>
+    <!-- <link rel="stylesheet" href="./assets/css/stylle.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="login-register">
+        <div id="form-left">
+            <form action="" class="form-login" >
+                <div class="in-form-login">
+                    <div class="title">
+                        <h2>Đăng nhập</h2>
+                        <p>Your Passion is our Satisfaction – Đam mê của bạn là sự hài lòng của chúng tôi</p>
+                    </div>
+                    <div class="line-space-big"></div>
+                    <div class="form-input">
+                        <input class="first" type="text" formControlName="email"  placeholder="Tài khoản đăng nhập">
+
+                        <input class="second" type="password" formControlName="password"  placeholder="Mật khẩu đăng nhập">
+
+
+
+                        <div class="line-space-big"></div>
+                        <div class="remember">
+                            <label class="checkbox">
+                                <input type="checkbox" value="remember-me" id="remember_me"> Lưu lại thông tin tài khoản
+                            </label>
+                            <br>
+                            <p onclick="myFunction()"><a routerLink="../register">Bạn chưa có tài khoản ? Tạo ngay tại đây!!!</a></p>
+                        </div>
+                        <div class="login-button">
+                            <p><button class="login">Đăng nhập</button></p>
+                            <p class="or-button">- hoặc -</p>
+                            <p><button class="login-google">Đăng nhập bằng tài khoản Google</button></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="form-right">
+
+        </div>
+    </div>
+</body>
+
+</html>
