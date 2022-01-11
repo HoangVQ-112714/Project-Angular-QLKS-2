@@ -1,0 +1,333 @@
+/* Reset Css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/* OTHER */
+.line-big {
+  height: 15px;
+}
+
+.line-big-2 {
+  height: 25px;
+}
+
+#content>.content-login>h2,
+#content>.content-address-top>h2,
+#content>.content-voucher>h2,
+#content>.content-blog>h2 {
+  font-size: 30px;
+}
+
+#content>.content-login>p,
+#content>.content-address-top>p,
+#content>.content-voucher>p,
+#content>.content-blog>p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* ---OTHER */
+
+/* SLIDE */
+#slider {
+  position: relative;
+  margin: 50px 7%;
+  background-color: red;
+  height: 290px;
+  border-radius: 20px;
+}
+
+#slider .slide1 {
+  position: absolute;
+  background-image: url(https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg);
+  width: 100%;
+  height: 140%;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---SLIDE */
+
+
+/* CONTENT */
+#content {
+  position: relative;
+  margin: 20px 7%;
+  /* background-color: red; */
+  height: 2600px;
+}
+
+/* Login */
+#content>.content-login {
+  position: absolute;
+  top: 150px;
+  /* background-color: red; */
+  width: 100%;
+}
+
+/* ---Login */
+
+/* Address-top-area */
+#content>.content-address-top {
+  position: absolute;
+  top: 340px;
+  width: 100%;
+}
+
+#content .address-top-area {
+  position: absolute;
+  /* background-color: red; */
+  width: 100%;
+  height: 300px;
+}
+
+.address-top-area .address-area-01,
+.address-top-area .address-area-02,
+.address-top-area .address-area-03,
+.address-top-area .address-area-04,
+.address-top-area .address-area-05 {
+  position: relative;
+  width: 19.3%;
+  height: 400px;
+  border-radius: 10px;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.address-top-area .address-area-02,
+.address-top-area .address-area-03,
+.address-top-area .address-area-04,
+.address-top-area .address-area-05 {
+  margin-left: 0.5%;
+}
+
+#content .address-top-area .address-area-01 {
+  background-image: url(https://cdn.luxstay.com/home/location/location_1_1559734709.png);
+
+}
+
+#content .address-top-area .address-area-02 {
+  background-image: url(https://cdn.luxstay.com/home/location/location_5_1559735011.png);
+}
+
+#content .address-top-area .address-area-03 {
+  background-image: url(https://cdn.luxstay.com/home/location/location_10_1559303118.png);
+}
+
+#content .address-top-area .address-area-04 {
+  background-image: url(https://cdn.luxstay.com/home/location/location_4_1559786177.png);
+}
+
+#content .address-top-area .address-area-05 {
+  background-image: url(https://cdn.luxstay.com/home/location/location_16_1559303173.png);
+}
+
+.address-top-area .content-on-image {
+  position: absolute;
+  color: white;
+  top: 65%;
+  left: 10%;
+  padding: 5px;
+  width: 70%;
+  background-color: rgba(107, 102, 102, 0.671);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content-on-image>h2 {
+  font-size: 27px;
+}
+
+.content-on-image>p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* ---Address-top-area */
+
+/* Voucher */
+.content-voucher {
+  position: absolute;
+  width: 100%;
+  top: 945px;
+}
+
+.content-voucher .voucher-image {
+  position: absolute;
+  width: 100%;
+}
+
+.voucher-image-01,
+.voucher-image-02,
+.voucher-image-03 {
+  /* position: position; */
+  width: 32.7%;
+  height: 204px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  background-size: cover;
+}
+
+.voucher-image-02,
+.voucher-image-03 {
+  margin-left: 0.5%;
+}
+
+.voucher-image-01 {
+  background-image: url(https://cdn.luxstay.com/home/event/event_1_1633051905.jpg);
+}
+
+.voucher-image-02 {
+  background-image: url(https://cdn.luxstay.com/home/event/event_1_1614658965.jpg);
+}
+
+.voucher-image-03 {
+  background-image: url(https://cdn.luxstay.com/home/event/event_1_1596604498.jpg);
+}
+
+/* ---Voucher */
+
+/* Blog */
+#content .content-blog {
+  position: absolute;
+  width: 100%;
+  top: 1340px;
+}
+
+.content-blog .blog-show {
+  position: relative;
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.blog-show-content-1,
+.blog-show-content-2,
+.blog-show-content-3,
+.blog-show-content-4 {
+  position: relative;
+  /* padding-top: 10px; */
+  width: 24%;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* background-color: red; */
+}
+
+.blog-show-content-2,
+.blog-show-content-3,
+.blog-show-content-4 {
+  margin-left: 0.97%;
+}
+
+.blog-show-content-1>.blog-image-1,
+.blog-show-content-2>.blog-image-2,
+.blog-show-content-3>.blog-image-3,
+.blog-show-content-4>.blog-image-4 {
+  position: absolute;
+  width: 100%;
+  height: 230px;
+  border-radius: 5px;
+  background-color: red;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-image-1 {
+  background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/11/The-most-secluded-hotel-in-the-world-priced-at-more-350x250.jpg);
+}
+
+.blog-image-2 {
+  background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/12/Hotels-in-Cambodia-are-on-fire-during-New-Years-Eve-350x250.jpg);
+}
+
+.blog-image-3 {
+  background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/11/9-things-to-memorize-before-booking-a-hotel-350x250.jpg);
+}
+
+.blog-image-4 {
+  background-image: url(https://travel.luxstay.com/wp-content/uploads/2021/11/Da-Lat-is-more-hot-thanks-to-a-series-of-350x250.jpg);
+}
+
+.blog-show .blog-content {
+  position: absolute;
+  width: 100%;
+  top: 240px;
+}
+
+.blog-content>.title {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  text-align: center;
+  /* top: 450px; */
+}
+
+.blog-content>.description {
+  position: absolute;
+  text-align: center;
+}
+
+/* ---Blog */
+
+/* App */
+
+.content-app {
+  position: relative;
+  top: 1900px;
+  /* background-color: red; */
+  height: 700px;
+}
+
+.content-app .app-left {
+  position: absolute;
+  width: 40%;
+  /* background-color: yellow; */
+}
+
+.content-app .app-right {
+  position: absolute;
+  width: 50%;
+  height: 700px;
+  right: 0;
+  /* background-size: cover; */
+  /* background-color: blue; */
+}
+
+.content-app .app-right .app-image {
+  background-image: url(https://www.luxstay.com/home/home-02.png);
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+.app-left>.content-1>h1 {
+  font-size: 70px;
+}
+
+.app-left>.content-2>h2 {
+  font-size: 40px;
+}
+
+.app-left>.content-4 {
+  background-image: url(https://www.luxstay.com/qr-code.png);
+  width: 300px;
+  height: 300px;
+  margin: 50px 0 0 0;
+}
+
+/* ---App */
+
+/* ---CONTENT */

@@ -1,0 +1,166 @@
+/*Reset Css*/
+#product-detail {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+#product-detail .slideshow {
+  /*background-color: red;*/
+  height: 420px;
+  width: 100%;
+}
+
+#product-detail .main-product {
+  /*background-color: aqua;*/
+  width: 100%;
+  height: 2000px;
+  padding: 0 7%;
+}
+
+#product-detail .main-product .product-detail {
+  /*background-color: yellow;*/
+  width: 70%;
+  height: 1250px;
+  float: left;
+}
+
+/*House-Detail*/
+#product-detail .main-product .form-order {
+  /*background-color: blue;*/
+  width: 30%;
+  height: 1250px;
+  float: right;
+}
+
+/*Product Detail*/
+.product-detail .main-product-detail {
+  /*background-color: red;*/
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.product-detail .main-product-detail .title {
+  /*background-color: aqua;*/
+  width: 100%;
+  height: 100px;
+  text-transform: capitalize;
+}
+
+.product-detail .main-product-detail .about {
+  /*background-color: green;*/
+  width: 100%;
+  line-height: 16px;
+  padding: 10px 0;
+}
+
+.main-product-detail .about .abicon{
+  color: black;
+}
+
+.product-detail .main-product-detail .table-detail {
+  /*background-color: cadetblue;*/
+  width: 100%;
+  padding: 15px 0;
+}
+
+.table-detail table {
+  background-color: black;
+  width: 100%;
+}
+
+th, td {
+  padding: 3px 10px 0;
+  line-height: 26px;
+  background-color: white;
+  display: table-cell;
+  text-align: center;
+}
+
+.table-detail .image-title {
+  width: 50%;
+}
+
+.table-detail .image-show {
+  width: 100%;
+  height: 400px;
+}
+
+.product-detail .main-product-detail .furniture {
+  /*background-color: blueviolet;*/
+  width: 100%;
+  height: 450px;
+}
+
+.product-detail .furniture .show-furniture {
+  /*background-color: aquamarine;*/
+  width: 100%;
+  padding-top: 20px;
+}
+
+.furniture .show-furniture .show-furniture-table {
+  /*background-color: white;*/
+  width: 60%;
+}
+
+.show-furniture-table td {
+  /*background-color: red;*/
+  width: calc(100% / 3);
+  text-align: left;
+}
+
+.icon {
+  color: black;
+  font-size: 20px;
+  padding: 0 5px 0 0;
+}
+
+/*---House-Detail*/
+
+/*Form Order*/
+.main-product .form-order .main-form {
+  /*background-color: red;*/
+  /*width: 96%;*/
+  /*height: 90%;*/
+  margin: 32% 2%;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+}
+
+.show-form-in-form{
+  /*background-color: red;*/
+  width: 100%;
+  margin: 0 20px;
+}
+
+.form-order .main-form .money{
+  padding-top: 10px;
+}
+
+.day-to-day{
+  border-radius: 10px;
+  /*background-color: blue;*/
+}
+
+.day-to-day>input{
+  cursor: pointer;
+  height: 40px;
+  width: 40%;
+}
+
+.main-form>form>button{
+  background-image: linear-gradient(90deg,#f65e38 0,#f68a39 51%,#f65e38);
+  margin: 10px 0 0 0;
+  text-align: center;
+  width: 40%;
+  height: 35px;
+  line-height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: white;
+}
+/*---Form Order*/

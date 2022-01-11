@@ -1,0 +1,202 @@
+/* Reset Css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+/* OTHER */
+.line-beauty {
+  height: 10px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0);
+  border-bottom: 1px solid gray;
+}
+
+/* ---OTHER */
+
+/* HEADING */
+#admin-theme .admin-theme-header {
+  background-color: #212529;
+  width: 100%;
+  height: 60px;
+}
+
+.admin-theme-header .name-brand>h2 {
+  color: white;
+  line-height: 60px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  float: left;
+}
+
+.admin-theme-header .user-setting {
+  color: white;
+  line-height: 60px;
+  font-size: 35px;
+  float: right;
+  padding-right: 30px;
+}
+
+.admin-theme-header .user-setting:hover {
+  color: red;
+}
+
+/* ---HEADING */
+
+/* CONTENT */
+
+#admin-theme .admin-theme-content {
+  background-color: white;
+  margin-top: 3px;
+  width: 100%;
+  height: 870px;
+
+}
+
+/* Sidebar */
+
+#admin-theme .admin-theme-content .sidebar {
+  height: 100%;
+  width: 20%;
+  background-color: #212529;
+  float: left;
+}
+
+.admin-theme-content .sidebar>h2 {
+  color: white;
+  font-size: 15px;
+  padding: 10px 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.admin-theme-content .sidebar .menu h4{
+  color:white;
+  text-transform: uppercase;
+  line-height: 36px;
+  padding:15px 0 10px 26px;
+}
+
+.admin-theme-content .sidebar .menu a{
+  color:white;
+  padding-left: 36px;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.menu>ul>li>a>i{
+  color: red;
+}
+
+.admin-theme-content .sidebar .menu li:hover{
+  background-color:gray;
+  cursor: pointer;
+}
+
+/* ---Sidebar */
+
+/* Main */
+
+#admin-theme .admin-theme-content .main-content {
+  /* background-color:red; */
+  height: 100%;
+  width: 80%;
+  float: right;
+}
+
+.main-content {
+  /* background-color: red; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content .main-show {
+  position: absolute;
+  left: 0.5%;
+  width: 99.5%;
+  height: 100%;
+  background-color: #d6d9db;
+  /* border-radius: 10px 0 0 0; */
+}
+
+/* DataShow */
+#table-manager {
+  /* padding: 0;
+  margin: 0;
+  box-sizing: border-box; */
+  position: absolute;
+  width: 96%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 700px;
+  top: 30px;
+  left: 2%;
+}
+
+#table-manager img {
+  width: 100px;
+  height: 100px;
+}
+
+#table-manager .table-header {
+  background-color: rgba(128, 128, 128, 0.514);
+  width: 100%;
+  display: inline-block;
+}
+
+#table-manager>.table-header>p {
+  position: relative;
+  left: 2%;
+}
+
+.line-big {
+  height: 10px;
+}
+
+.table-content-show>table {
+  width: 96%;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: gray;
+  position: relative;
+  top: 10px;
+  left: 2%;
+}
+
+.table-content-show table th,
+.table-content-show table td {
+  padding-top: 3px;
+  line-height: 26px;
+  background-color: white;
+  display: table-cell;
+  text-align: center;
+}
+
+.table-content-show table th {
+  background-color: antiquewhite;
+  font-size: 17px;
+}
+
+.table-content-show table td button {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  font-size:20px;
+}
+
+.table-content-show table td button:hover {
+  background-color: #212529;
+  color: white;
+}
+
+
+
+/* ---DataShow */
+
+/* ---Main */
+
+/* ---CONTENT */
