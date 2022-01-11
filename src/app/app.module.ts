@@ -13,6 +13,9 @@ import { HouseDetailComponent } from './components/user/pages/house-detail/house
 import { UserProfileComponent } from './components/user/pages/user-profile/user-profile.component';
 import { AdminProfileComponent } from './components/admin/pages/admin-profile/admin-profile.component';
 import { HouseCreateComponent } from './components/admin/pages/house-create/house-create.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { HouseCreateComponent } from './components/admin/pages/house-create/hous
     HouseCreateComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

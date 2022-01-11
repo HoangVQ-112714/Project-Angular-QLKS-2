@@ -13,12 +13,16 @@
 <body>
     <div id="login-register">
         <div id="form-left">
-            <form action="" class="form-login" >
+            <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="login()" >
                 <div class="in-form-login">
                     <div class="title">
                         <h2>Đăng nhập</h2>
                         <p>Your Passion is our Satisfaction – Đam mê của bạn là sự hài lòng của chúng tôi</p>
+                      <p *ngIf="errorLogin">
+                        {{errorLogin}}
+                      </p>
                     </div>
+
                     <div class="line-space-big"></div>
                     <div class="form-input">
                         <input class="first" type="text" formControlName="email"  placeholder="Tài khoản đăng nhập">
