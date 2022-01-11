@@ -34,7 +34,7 @@
 
         <div id="form-right">
             <div id="form-right-hidden">
-                <form action="" class="form-register" >
+                <form [formGroup]="registerForm" (ngSubmit)="register()" >
                     <div class="in-form-register">
                         <div class="title">
                             <h2>Đăng ký tài khoản mới tại đây</h2>
@@ -42,6 +42,12 @@
                         </div>
                         <div class="form-input">
                             <input class="first" type="text" formControlName="name" placeholder="Tên của bạn">
+<!--                          <div *ngIf="errorRegister?.invalid" class="alert alert-danger">-->
+<!--                            <div *ngIf="errorRegister?.errors?.['required']">-->
+<!--                              Name is required-->
+<!--                            </div>-->
+<!--                          </div>-->
+
                             <input class="midle" type="email" formControlName="email" placeholder="Tài khoản Gmail của bạn">
                             <input class="midle" type="number"  formControlName="phone"  placeholder="Số điện thoại của bạn">
                             <input class="second" type="text" formControlName="address"  placeholder="Địa chỉ cá nhân">
@@ -49,7 +55,7 @@
                             <input class="first" type="password" formControlName="password"  placeholder="Mật khẩu">
                             <input class="second" type="password" formControlName="repassword"  placeholder="Nhập lại mật khẩu">
                             <!-- <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" (change)="handleFileInput($event.target.files)"></p> -->
-                            <select class="role" name="role" id="">
+                            <select class="role" formControlName="role" name="role" id="">
                                 <option value="Manager">Bạn là - Chủ nhà</option>
                                 <option value="User">Bạn là - Khách hàng</option>
                             </select>
