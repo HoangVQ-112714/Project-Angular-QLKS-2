@@ -3,6 +3,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+#admin-theme-content{
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -84,6 +87,7 @@
   padding-left: 36px;
   line-height: 36px;
   text-decoration: none;
+  width: 100%;
 }
 
 .menu>ul>li>a>i{

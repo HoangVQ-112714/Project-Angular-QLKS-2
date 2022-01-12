@@ -1,9 +1,11 @@
 /* Reset Css */
-
-#login-register {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#login-register {
     font-family: "Quicksand", sans-serif;
     background-color: white;
 }

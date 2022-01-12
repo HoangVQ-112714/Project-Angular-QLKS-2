@@ -7,12 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-<!--  <link rel="stylesheet" href="./assets/css/style.css">-->
-<!--  <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">-->
 </head>
 <body>
 <div id="product-detail">
-  <div class="slideshow"></div>
+  <div class="slideshow">
+    <img src="https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg" alt="">
+  </div>
   <div class="main-product">
     <div class="product-detail">
       <div class="main-product-detail">
@@ -20,7 +20,7 @@
           <h2>{{house.name}}</h2>
         </div>
         <div class="about">
-          <p><i class="abicon ti-location-pin"></i>{{house.address}}</p>
+          <p><i class="abicon ti-location-pin"></i> {{house.address}}</p>
           <br>
           <p><i class="abicon ti-direction"></i> {{house.category.name}}</p>
         </div>
@@ -53,7 +53,7 @@
           <h4>Tiện nghi chỗ ở</h4>
           <p>Giới thiệu về các tiện nghi và dịch vụ tại nơi lưu trú </p>
           <div class="show-furniture">
-            <p class="show-furniture-title">Tiện ích</p>
+            <p class="show-furniture-title"><strong>Tiện ích</strong></p>
             <table class="show-furniture-table">
               <tr>
                 <td><i class="icon ti-rss-alt"></i>Wifi</td>
@@ -78,7 +78,7 @@
             </table>
           </div>
           <div class="show-furniture">
-            <p class="show-furniture-title">Tiện ích bếp</p>
+            <p class="show-furniture-title"><strong>Tiện ích bếp</strong></p>
             <table class="show-furniture-table">
               <tr>
                 <td><i class="icon ti-reload"></i>Bếp điện</td>
@@ -88,7 +88,7 @@
             </table>
           </div>
           <div class="show-furniture">
-            <p class="show-furniture-title">Tiện ích phòng</p>
+            <p class="show-furniture-title"><strong>Tiện ích phòng</strong></p>
             <table class="show-furniture-table">
               <tr>
                 <td><i class="icon ti-microsoft"></i>Ban Công</td>
