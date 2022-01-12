@@ -1,0 +1,94 @@
+/*Reset Css*/
+#main-profile-user {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab";
+}
+
+#main-profile-user .title-main-user {
+  width: 86%;
+  /*background-color: red;*/
+  line-height: 20px;
+  margin: 40px 7%;
+  text-transform: capitalize;
+}
+
+#main-profile-user .main-profile-user {
+  /*background-color: rgba(169, 169, 187, 0.11);*/
+  width: 86%;
+  height: 700px;
+  margin: 20px 7%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Left*/
+#main-profile-user .main-profile-user .nav-left-main {
+  background-color: white;
+  width: 30%;
+  float: left;
+  box-shadow: 0 0 10px rgba(112, 112, 112, 0.13);
+}
+
+.main-profile-user .nav-left-main li {
+  list-style-type: none;
+  padding: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-profile-user .nav-left-main li:hover{
+  background-color: darkgray;
+  border-bottom-color: black;
+}
+
+.main-profile-user .nav-left-main li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Right*/
+.main-profile-user .nav-right-main{
+  width: 70%;
+  /*background-color: red;*/
+  float: right;
+}
+
+.nav-right-main .main-profile{
+  margin-left: 5%;
+}
+
+.nav-right-main .main-profile .image-profile{
+  width: 100px;
+}
+
+.main-profile .image-profile img{
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #f65e39;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.main-profile .show-main{
+  padding-bottom: 10px;
+  font-size: 90%;
+  font-weight: 400;
+}
+
+.main-profile .show-main>.show-detail-main{
+  margin: 5px 0;
+  height: 35px;
+  width: 70%;
+  border-radius: 4px;
+  background-color: rgba(169, 169, 169, 0.44);
+  line-height: 35px;
+}
+
+::placeholder{
+  font-family: "Roboto Slab";
+  font-size: 20px;
+}

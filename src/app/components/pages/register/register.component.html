@@ -34,7 +34,7 @@
 
         <div id="form-right">
             <div id="form-right-hidden">
-                <form [formGroup]="registerForm" (ngSubmit)="register()" >
+                <form [formGroup]="registerForm" (ngSubmit)="register()" class="form-register">
                     <div class="in-form-register">
                         <div class="title">
                             <h2>Đăng ký tài khoản mới tại đây</h2>
@@ -54,11 +54,15 @@
                             <div class="line-space-big"></div>
                             <input class="first" type="password" formControlName="password"  placeholder="Mật khẩu">
                             <input class="second" type="password" formControlName="repassword"  placeholder="Nhập lại mật khẩu">
-                            <!-- <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" (change)="handleFileInput($event.target.files)"></p> -->
-                            <select class="role" formControlName="role" name="role" id="">
+                            <div class="line-space-big"></div>
+                            <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" formControlName="avatar"></p>
+                            <div class="line-space-big"></div>
+                          <p>Bạn là ...</p>
+                            <select class="role" formControlName="role" name="role">
                                 <option value="Manager">Bạn là - Chủ nhà</option>
                                 <option value="User">Bạn là - Khách hàng</option>
                             </select>
+                            <div class="line-space-big"></div>
                             <div class="register-button">
                                 <p><button class="create-account">Tạo tài khoản</button></p>
                             </div>

@@ -1,1 +1,78 @@
-<router-outlet></router-outlet>
+<!--<app-admin-navbar></app-admin-navbar>-->
+
+<!--<app-admin-sidebar></app-admin-sidebar>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoangVQ - Admintheme - 01</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+<!--  <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">-->
+</head>
+
+<body>
+<div id="admin-theme">
+  <!-- HEADING -->
+  <div class="admin-theme-header">
+    <div class="name-brand">
+      <h2>Luxstay</h2>
+    </div>
+    <div class="user-setting"><i class="ti-user">
+      <!-- <ul>
+          <li>Trang chủ</li>
+          <li>Cá nhân</li>
+          <li>Đăng xuất</li>
+      </ul> -->
+    </i></div>
+  </div>
+  <!-- ---HEADING -->
+
+  <!-- CONTENT -->
+  <div class="admin-theme-content">
+
+    <!-- Slidebar -->
+    <div class="sidebar">
+      <h2>Chủ nhà cho thuê</h2>
+      <div class="line-beauty"></div>
+      <div class="line-beauty"></div>
+      <div class="menu">
+        <h4>Quản lý nhà</h4>
+        <ul>
+          <li><a routerLink="home"><i class="ti-home"></i> Danh sách nhà</a></li>
+          <li><a href=""><i class="ti-home"></i> Nhà đang thuê</a></li>
+          <li><a routerLink="house/create"><i class="ti-cloud-up"></i> Thêm nhà mới</a></li>
+        </ul>
+        <div class="line-beauty"></div>
+        <h4>Quản lý người thuê</h4>
+        <ul>
+          <li><a href=""><i class="ti-user"></i> Danh sách người thuê</a></li>
+          <li><a href=""><i class="ti-timer"></i> Danh sách đăng ký thuê</a></li>
+        </ul>
+        <div class="line-beauty"></div>
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="tel:+0942126862"><i class="ti-headphone-alt"></i> Tổng đài hỗ trợ</a></li>
+          <li><a href="mailto:pedona.hoangvq@gmail.com"><i class="ti-email"></i> Gửi mail câu hỏi</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ---Slidebar -->
+
+    <!-- Main -->
+    <div class="main-content">
+      <div class="main-show">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <!-- ---Main -->
+
+  </div>
+  <!-- ---CONTENT -->
+</div>
+</body>
+
+</html>

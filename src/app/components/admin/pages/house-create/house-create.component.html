@@ -1,1 +1,69 @@
-<p>house-create works!</p>
+<div id="product-cu">
+  <form id="form1" action="" *ngIf="createForm" [formGroup]="createForm" (ngSubmit)="create()">
+    <div class="header-title">
+      <h1 class="title">Đăng sản phẩm tại đây</h1>
+    </div>
+    <div id="form-product-cu">
+      <div class="product-left">
+        <table>
+          <tr>
+            <h3 class="title"><strong>Tên sản phẩm</strong></h3>
+            <input type="text" formControlName="name">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Giá bán</strong></h3>
+            <input type="number" formControlName="price">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Địa chỉ</strong></h3>
+            <input type="text" formControlName="address">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Loại nhà</strong></h3>
+            <p><select class="select-option" formControlName="category_id" >
+              <option *ngFor="let category of categories; index as i" value="{{category.id}}">{{category.name}}</option>
+            </select></p>
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Mô tả thêm</strong></h3>
+            <textarea name=""  cols="75" rows="10" formControlName="description"></textarea>
+          </tr>
+        </table>
+      </div>
+
+      <div class="product-right">
+        <table>
+          <tr>
+            <h3 class="title"><strong>Số phòng ngủ</strong></h3>
+            <input type="number" formControlName="bedroom">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Số phòng tắm</strong></h3>
+            <input type="number" formControlName="bathroom">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Trạng thái</strong></h3>
+            <p><select class="select-option" formControlName="status" >
+              <option value="Có thể cho thuê">Có thể cho thuê</option>
+              <option value="Đã có người thuê">Đã có người thuê</option>
+            </select></p>
+          </tr>
+<!--          <tr>-->
+<!--&lt;!&ndash;            <h3 class="title"><strong>Người dùng</strong></h3>&ndash;&gt;-->
+<!--&lt;!&ndash;            <p><select class="select-option" formControlName="user_id">&ndash;&gt;-->
+<!--&lt;!&ndash;              <option value="">Hồ Tây</option>&ndash;&gt;-->
+<!--&lt;!&ndash;            </select></p>&ndash;&gt;-->
+<!--          </tr>-->
+<!--          <tr>-->
+<!--            <h3 class="title"><strong>Thêm ảnh sản phẩm</strong></h3>-->
+<!--            <input type="file" id="file" >-->
+<!--          </tr>-->
+          <tr>
+            <p><button>Thêm sản phẩm mới</button></p>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </form>
+</div>

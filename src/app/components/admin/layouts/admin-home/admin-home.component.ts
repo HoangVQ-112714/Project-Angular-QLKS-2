@@ -7,6 +7,7 @@ import {UserService} from "../../../../services/user/user.service";
   styleUrls: ['./admin-home.component.css']
 })
 export class AdminHomeComponent implements OnInit {
+  houses: any = []
 
   constructor(private userService: UserService) { }
 
@@ -15,7 +16,7 @@ export class AdminHomeComponent implements OnInit {
   }
   getAllHouse() {
     this.userService.getAllHouse().subscribe( res => {
-      console.log(res)
+      this.houses = res
     })
   }
 

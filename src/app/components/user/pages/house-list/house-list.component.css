@@ -168,7 +168,7 @@ body {
 
 .address-top-area .show-product {
   position: relative;
-  width: 19.37%;
+  width: 18.37%;
   height: 450px;
   border-radius: 10px;
   background-size: cover;
@@ -178,7 +178,7 @@ body {
 }
 
 .address-top-area .show-product {
-  margin-left: 0.5%;
+  margin-left: 1.6%;
 }
 
 .address-top-area .address-area-01a {
@@ -206,7 +206,7 @@ body {
   position: absolute;
   color: black;
   top: 55%;
-  left: 0.5%;
+  /* left: 0.5%; */
   padding: 5px 0 10px 10px;
   width: 100%;
   background-color: rgba(155, 149, 70, 0.055);

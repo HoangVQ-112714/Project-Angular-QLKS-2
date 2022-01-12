@@ -40,9 +40,141 @@ body {
 
 /* ---OTHER */
 
+/* HEADING */
+#heading {
+  background-color: white;
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+  /* position: relative; */
+  /* position: fixed;*/
+  text-transform: uppercase;
+}
+
+
+/* Logo */
+#heading .header-logo {
+  background-color: rgba(128, 128, 128, 0.411);
+  height: 64px;
+  width: 64px;
+  float: left;
+  margin: 7px 7%;
+  border-radius: 90px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#heading .header-logo-1 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin: 7px;
+  border-radius: 90px;
+}
+
+.header-logo-1 h3 {
+  color: white;
+  font-size: 35px;
+}
+
+#heading .header-logo-1:hover {
+  background-color: red;
+}
+
+/* ---Logo */
+
+/* Menu */
+.header-menu {
+  font-size: 20px;
+  float: right;
+  margin-right: 11%;
+  display: inline-block;
+}
+
+.menu-content>li {
+  line-height: 78px;
+  list-style-type: none;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+.menu-content li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*.menu-content>li>.admin {*/
+/*    color: rgb(23, 23, 114);*/
+/*}*/
+
+.menu-content li:hover {
+  border-bottom: 1px solid rgb(30, 30, 124);
+}
+
+.li-avatar {
+  position: relative;
+  background-color: red;
+  width: 10%;
+  top: -70px;
+  right: -115%;
+  cursor: pointer;
+}
+
+.li-avatar>img {
+  position: absolute;
+  width: 53px;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  /* padding:1px; */
+}
+
+.li-avatar>img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.li-avatar .avatar-menu{
+  display: block;
+}
+
+.li-avatar .avatar-menu {
+  /*display:none;*/
+  position: absolute !important;
+  background-color: white;
+  width: 220px;
+  top: 80px;
+  left: -180px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.avatar-menu li {
+  text-align: right;
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.avatar-menu li a {
+  text-decoration: none;
+  line-height:25px;
+  font-size: 16px;
+  width: 100%;
+  color: black;
+}
+
+
+.avatar-menu li:hover{
+  background-color: rgba(128, 128, 128, 0.665);
+}
+/* ---Menu */
+/* ---HEADING */
+
+
 /* SLIDE */
 #slider {
-  position: relative;
+  position: static;
   margin: 50px 7%;
   background-color: red;
   height: 290px;
@@ -50,7 +182,7 @@ body {
 }
 
 #slider .slide1 {
-  position: absolute;
+  position: static;
   background-image: url(https://beta-api.luxstay.net/api/upload/file?storage=admins/12/qF7ukmI--Rwr2H5LwzVZwcXa.jpg);
   width: 100%;
   height: 140%;
@@ -331,3 +463,21 @@ body {
 /* ---App */
 
 /* ---CONTENT */
+
+/* FOOTER */
+#footer {
+  position: relative;
+  /* background-color: red; */
+  height: 130px;
+  border-top: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+#footer .footer-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* ---FOOTER */
