@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.admin-theme-content {
+  /*background-color: red;*/
+  height: 800px;
+  width: 100%;
+}
+
+.admin-theme-content .main-content {
+  /*background-color: red;*/
+  height: 100%;
+  width: 84%;
+  margin: 15px 7%;
+}
+
+.main-content {
+  /*background-color: red;*/
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content .main-show {
+  /*position: absolute;*/
+  /*left: 0.5%;*/
+  width: 100%;
+  height: 100%;
+  /*background-color: #d6d9db;*/
+  /* border-radius: 10px 0 0 0; */
+}
+
+/* DataShow */
+#table-manager {
+  /* padding: 0;
+  margin: 0;
+  box-sizing: border-box; */
+  position: static;
+  width: 100%;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 800px;
+  /*top: -30px;*/
+  /*left: 2%;*/
+}
+
+#table-manager img {
+  width: 100px;
+  height: 100px;
+}
+
+#table-manager .table-header {
+  background-color: rgba(128, 128, 128, 0.514);
+  width: 100%;
+  display: inline-block;
+}
+
+#table-manager > .table-header > p {
+  position: relative;
+  left: 2%;
+}
+
+.line-big {
+  height: 10px;
+}
+
+.table-content-show > table {
+  width: 96%;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: gray;
+  position: relative;
+  top: 10px;
+  left: 2%;
+}
+
+.table-content-show table th,
+.table-content-show table td {
+  padding-top: 3px;
+  line-height: 26px;
+  background-color: white;
+  display: table-cell;
+  text-align: center;
+}
+
+.table-content-show table th {
+  background-color: antiquewhite;
+  font-size: 17px;
+}
+
+.table-content-show table td button {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.table-content-show table td button:hover {
+  background-color: #212529;
+  color: white;
+}
+
+
+/* ---DataShow */
