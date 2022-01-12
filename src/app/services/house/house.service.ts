@@ -3,13 +3,14 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
 import {Observable} from "rxjs";
 import {House} from "../../models/house";
+import {LoginService} from "../auth/login.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class HouseService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private loginService: LoginService) { }
   getAll(): Observable<any> {
     return this.http.get(
       environment.api_url + "/houses"
@@ -18,6 +19,11 @@ export class HouseService {
   getById(id: number): Observable<any> {
     return this.http.get(
       environment.api_url + "/houses" + `/${id}`
+    )
+  }
+  create(data: any): Observable<any> {
+    return this.http.post(
+      environment.api_url + "/houses", data, {headers: this.loginService.setHeader()}
     )
   }
 }

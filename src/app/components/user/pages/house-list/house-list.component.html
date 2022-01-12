@@ -22,10 +22,9 @@
       <div class="line-big"></div>
       <div class="address-top-area">
 
-        <div class="show-product" *ngFor="let house of houses; index as i">
-          <div routerLink="{{house.id}}" class="address-area-01a">
-            <img
-              src="https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png">
+        <div routerLink="{{house.id}}" class="show-product" *ngFor="let house of houses; index as i">
+          <div class="address-area-01a">
+            <img src="https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png">
           </div>
           <div class="content-under-image">
             <h5>{{house.name}}</h5>

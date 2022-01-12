@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     let data = this.loginForm?.value
-    this.loginService.login(data).subscribe(res => {
+    this.loginService.login(data).subscribe(res =>{
       let token = res.access_token;
 
       if (res.user.role == "Manager") {

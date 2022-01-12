@@ -5,6 +5,8 @@ import { AdminRoutingModule } from './admin-routing.module';
 import {AdminHomeComponent} from "./layouts/admin-home/admin-home.component";
 import {AdminProfileComponent} from "./pages/admin-profile/admin-profile.component";
 import {HouseCreateComponent} from "./pages/house-create/house-create.component";
+import {ReactiveFormsModule} from "@angular/forms";
+
 
 
 @NgModule({
@@ -13,9 +15,12 @@ import {HouseCreateComponent} from "./pages/house-create/house-create.component"
     AdminProfileComponent,
     HouseCreateComponent,
   ],
+  exports: [
+  ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }

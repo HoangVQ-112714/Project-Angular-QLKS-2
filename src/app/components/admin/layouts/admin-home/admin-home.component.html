@@ -13,50 +13,13 @@
 
 <body>
 <div id="admin-theme">
-  <!-- HEADING -->
-  <div class="admin-theme-header">
-    <div class="name-brand">
-      <h2>Luxstay</h2>
-    </div>
-    <div class="user-setting"><i class="ti-user">
-      <!-- <ul>
-          <li>Trang chủ</li>
-          <li>Cá nhân</li>
-          <li>Đăng xuất</li>
-      </ul> -->
-    </i></div>
-  </div>
-  <!-- ---HEADING -->
+
 
   <!-- CONTENT -->
   <div class="admin-theme-content">
 
     <!-- Slidebar -->
-    <div class="sidebar">
-      <h2>Chủ nhà cho thuê</h2>
-      <div class="line-beauty"></div>
-      <div class="line-beauty"></div>
-      <div class="menu">
-        <h4>Quản lý nhà</h4>
-        <ul>
-          <li><a href=""><i class="ti-home"></i> Danh sách nhà</a></li>
-          <li><a href=""><i class="ti-home"></i> Nhà đang thuê</a></li>
-          <li><a href=""><i class="ti-cloud-up"></i> Thêm nhà mới</a></li>
-        </ul>
-        <div class="line-beauty"></div>
-        <h4>Quản lý người thuê</h4>
-        <ul>
-          <li><a href=""><i class="ti-user"></i> Danh sách người thuê</a></li>
-          <li><a href=""><i class="ti-timer"></i> Danh sách đăng ký thuê</a></li>
-        </ul>
-        <div class="line-beauty"></div>
-        <h4>Hỗ trợ</h4>
-        <ul>
-          <li><a href="tel:+0942126862"><i class="ti-headphone-alt"></i> Tổng đài hỗ trợ</a></li>
-          <li><a href="mailto:pedona.hoangvq@gmail.com"><i class="ti-email"></i> Gửi mail câu hỏi</a></li>
-        </ul>
-      </div>
-    </div>
+
     <!-- ---Slidebar -->
 
     <!-- Main -->
@@ -86,17 +49,17 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>01</td>
-                  <td>Biệt thự ven biển</td>
+                <tr *ngFor="let house of houses; index as i">
+                  <td>{{house.id}}</td>
+                  <td>{{house.name}}</td>
                   <td><img
                     src="https://sieupet.com/sites/default/files/pictures/images/cho-corgi-4.jpg"
                     alt=""></td>
-                  <td>R5A Royalcity - Nguyễn Trãi - Thanh Xuân - Hà Nội</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>2.000.000</td>
-                  <td>Chưa cho thuê</td>
+                  <td>{{house.address}}</td>
+                  <td>{{house.bedroom}}</td>
+                  <td>{{house.bathroom}}</td>
+                  <td>{{house.price | currency: "VND"}}</td>
+                  <td>{{house.status}}</td>
                   <td>
                     <button class="update">Sửa</button>
                     <button class="delete">Xóa</button>

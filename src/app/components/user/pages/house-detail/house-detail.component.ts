@@ -22,7 +22,6 @@ export class HouseDetailComponent implements OnInit {
   }
   getById(id: any) {
     this.houseService.getById(id).subscribe(res => {
-      console.log(res)
       this.house = res
     })
   }

@@ -1,0 +1,96 @@
+/* Reset Css */
+#product-cu {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Only Admin */
+body {
+  /* background-color: rgba(238, 238, 238, 0.5); */
+}
+
+html {}
+
+/* ---Only Admin */
+
+/* ------- */
+#form1 {
+  width: 90%;
+  height: 750px;
+  background-color: rgba(238, 238, 238, 0.5);
+  position: relative;
+  top: 20px;
+  left: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 79%;
+  height: 30px;
+  border-radius: 7px;
+  /* margin-left: 10px; */
+}
+
+textarea {
+  width: 90%;
+}
+
+/* ------- */
+
+
+/* Table */
+.header-title {
+  text-align: center;
+  line-height: 490%;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+#form-product-cu .product-left {
+  padding: 0 0 0 10px;
+  width: 48.8%;
+  height: 700px;
+  background-color: white;
+  float: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#form-product-cu .product-right {
+  padding: 0 0 0 10px;
+  width: 48.8%;
+  height: 700px;
+  background-color: white;
+  float: right;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#form-product-cu .product-right .select-option,
+#form-product-cu .product-left .select-option {
+  padding: 7px;
+  width: calc(79% + 5px);
+  height: 40px;
+  border-radius: 7px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+button {
+  width: 240px;
+  height: 50px;
+  position: absolute;
+  top: 700px;
+  left: 80%;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+button:hover{
+  /* color: blue; */
+  background-color: rgb(166, 209, 166);
+}
+
+/* ---Table */

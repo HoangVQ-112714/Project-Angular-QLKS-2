@@ -9,14 +9,15 @@ import {environment} from "../../../environments/environment";
 export class LoginService {
 
   constructor(private http: HttpClient) { }
+
   login(data: any): Observable<any> {
     return this.http.post(
       environment.api_url + "/login", data
     )
   }
   setHeader() {
-    let token = JSON.parse(<string>localStorage.getItem("token"))
-    return new HttpHeaders().set('Authorization', "Bearer" + token)
+    let token = localStorage.getItem("token");
+    return new HttpHeaders().set('Authorization', "Bearer " + token)
   }
 
   logout(): Observable<any> {

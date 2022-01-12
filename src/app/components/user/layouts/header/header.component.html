@@ -1,4 +1,3 @@
-<!-- HEADING -->
 <div id="heading">
   <div class="header-logo">
     <div class="header-logo-1">
@@ -9,10 +8,17 @@
     <ul class="menu-content">
       <li><a routerLink="home">Trang chủ</a></li>
       <li><a routerLink="house">Homestay</a></li>
-      <li><a href="">Khu vực</a></li>
-      <li><a href="">Chủ nhà</a></li>
-      <li><a class="admin" href=""><strong>Cho thuê</strong></a></li>
     </ul>
+    <div class="li-avatar">
+      <img class="avatar"
+           src="https://media.istockphoto.com/vectors/smile-vector-template-design-vector-id989932050?k=20&m=989932050&s=612x612&w=0&h=09i0wMs25PRw9yeicF0t9-5bS6Z-I3YWlJpWZMIhZyk="
+           alt="">
+      <ul class="avatar-menu">
+        <li><a routerLink="userProfile">Thông tin cá nhân</a></li>
+        <li><a href="">Lịch sử giao dịch</a></li>
+        <li><a (click)="logout()">Đăng xuất</a></li>
+      </ul>
+    </div>
   </div>
 </div>
 <!-- ---HEADING -->
