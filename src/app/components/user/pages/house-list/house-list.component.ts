@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HouseService} from "../../../../services/house/house.service";
-import {House} from "../../../../models/house";
+
 
 @Component({
   selector: 'app-house-list',
