@@ -31,4 +31,10 @@ export class HouseService {
       environment.api_url + "/houses" + `/${id}`
     )
   }
+
+  update(id: number, data: any): Observable<any> {
+    return this.http.put(
+      environment.api_url + "/houses" + `/${id}`, data, {headers: this.loginService.setHeader()}
+    )
+  }
 }

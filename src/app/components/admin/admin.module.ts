@@ -7,6 +7,7 @@ import {AdminProfileComponent} from "./pages/admin-profile/admin-profile.compone
 import {HouseCreateComponent} from "./pages/house-create/house-create.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgxPaginationModule} from "ngx-pagination";
+import { HouseUpdateComponent } from './pages/house-update/house-update.component';
 
 
 
@@ -15,6 +16,7 @@ import {NgxPaginationModule} from "ngx-pagination";
     AdminHomeComponent,
     AdminProfileComponent,
     HouseCreateComponent,
+    HouseUpdateComponent,
   ],
   exports: [
   ],

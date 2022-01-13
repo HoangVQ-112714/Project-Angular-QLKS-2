@@ -2,76 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoangVQ-LoginRegister-01</title>
-    <!-- <link rel="stylesheet" href="./assets/css/stylle.css"> -->
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoangVQ-LoginRegister-01</title>
+  <!-- <link rel="stylesheet" href="./assets/css/stylle.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </head>
 
 <body>
-    <div id="login-register">
-        <div id="form-left">
-            <form action="" class="form-login">
-                <div class="in-form-login">
-                    <div class="title">
+<div id="login-register">
+  <div id="form-left">
+    <form action="" class="form-login">
+      <div class="in-form-login">
+        <div class="title">
 
-                    </div>
-                    <div class="line-space-big"></div>
-                    <div class="form-input">
-
-                        <div class="line-space-big"></div>
-                        <div class="remember">
-                        </div>
-                        <div class="login-button">
-                            <p><button class="login" routerLink="../login">Đăng nhập</button></p>
-                        </div>
-                    </div>
-                </div>
-            </form>
         </div>
+        <div class="line-space-big"></div>
+        <div class="form-input">
 
-        <div id="form-right">
-            <div id="form-right-hidden">
-                <form [formGroup]="registerForm" (ngSubmit)="register()" class="form-register">
-                    <div class="in-form-register">
-                        <div class="title">
-                            <h2>Đăng ký tài khoản mới tại đây</h2>
-                            <p>Definitely, We can Serve you better – Chắc chắn, chúng tôi có thể phục vụ bạn tốt hơn</p>
-                        </div>
-                        <div class="form-input">
-                            <input class="first" type="text" formControlName="name" placeholder="Tên của bạn">
-<!--                          <div *ngIf="errorRegister?.invalid" >-->
-<!--                            <div *ngIf="errorRegister?.errors?.['required']">-->
-<!--                              Name is required-->
-<!--                            </div>-->
-<!--                          </div>-->
+          <div class="line-space-big"></div>
+          <div class="remember">
+          </div>
+          <div class="login-button">
+            <p>
+              <button class="login" routerLink="../login">Đăng nhập</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
 
-                            <input class="midle" type="email" formControlName="email" placeholder="Tài khoản Gmail của bạn">
-                            <input class="midle" type="number"  formControlName="phone"  placeholder="Số điện thoại của bạn">
-                            <input class="second" type="text" formControlName="address"  placeholder="Địa chỉ cá nhân">
-                            <div class="line-space-big"></div>
-                            <input class="first" type="password" formControlName="password"  placeholder="Mật khẩu">
-                            <input class="second" type="password" formControlName="repassword"  placeholder="Nhập lại mật khẩu">
-                            <div class="line-space-big"></div>
-                            <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" formControlName="avatar"></p>
-                            <div class="line-space-big"></div>
-                          <p>Bạn là ...</p>
-                            <select class="role" formControlName="role" name="role">
-                                <option value="Manager">Bạn là - Chủ nhà</option>
-                                <option value="User">Bạn là - Khách hàng</option>
-                            </select>
-                            <div class="line-space-big"></div>
-                            <div class="register-button">
-                                <p><button class="create-account">Tạo tài khoản</button></p>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+  <div id="form-right">
+    <div id="form-right-hidden">
+      <form [formGroup]="registerForm" (ngSubmit)="register()" class="form-register">
+        <div class="in-form-register">
+          <div class="title">
+            <h2>Đăng ký tài khoản mới tại đây</h2>
+            <p>Definitely, We can Serve you better – Chắc chắn, chúng tôi có thể phục vụ bạn tốt hơn</p>
+          </div>
+          <div class="form-input">
+            <input class="first" type="text" formControlName="name" placeholder="Tên của bạn">
+            <div *ngIf="errorName?.invalid && (errorName?.dirty || errorName?.touched)">
+              <p style="color: red" *ngIf="errorName?.errors?.['required']">
+                Tên không được để trống
+              </p>
             </div>
+
+            <input class="midle" type="email" formControlName="email" placeholder="Tài khoản Gmail của bạn">
+            <div *ngIf="errorEmail?.invalid && (errorEmail?.dirty || errorEmail?.touched)">
+              <p style="color: red" *ngIf="errorEmail?.errors?.['required']">
+                Email không được để trống
+              </p>
+            </div>
+            <div *ngIf="errorName?.invalid && (errorName?.dirty || errorName?.touched)">
+              <p style="color: red" *ngIf="errorName?.errors?.['email']">
+                Dữ liệu phải là email
+              </p>
+            </div>
+            <input class="midle" type="number" formControlName="phone" placeholder="Số điện thoại của bạn">
+            <div *ngIf="errorPhone?.invalid && (errorPhone?.dirty || errorPhone?.touched)">
+              <p style="color: red" *ngIf="errorPhone?.errors?.['required']">
+                Số điện thoại không được để trống
+              </p>
+            </div>
+            <input class="second" type="text" formControlName="address" placeholder="Địa chỉ cá nhân">
+            <div *ngIf="errorAddress?.invalid && (errorAddress?.dirty || errorAddress?.touched)">
+              <p style="color: red" *ngIf="errorAddress?.errors?.['required']">
+                Địa chỉ không được để trống
+              </p>
+            </div>
+            <div class="line-space-big"></div>
+            <input class="first" type="password" formControlName="password" placeholder="Mật khẩu">
+            <div *ngIf="errorPassword?.invalid && (errorPassword?.dirty || errorPassword?.touched)">
+              <p style="color: red" *ngIf="errorPassword?.errors?.['required']">
+                Mật khẩu không được để trống
+              </p>
+            </div>
+            <input class="second" type="password" formControlName="repassword" placeholder="Nhập lại mật khẩu">
+            <div *ngIf="errorRepassword?.invalid && (errorRepassword?.dirty || errorRepassword?.touched)">
+              <p style="color: red" *ngIf="errorRepassword?.errors?.['required']">
+                Không được để trống
+              </p>
+            </div>
+            <div class="line-space-big"></div>
+            <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" formControlName="avatar"></p>
+            <div class="line-space-big"></div>
+            <p>Bạn là ...</p>
+            <select class="role" formControlName="role" name="role">
+              <option value="Manager">Bạn là - Chủ nhà</option>
+              <option value="User">Bạn là - Khách hàng</option>
+            </select>
+            <div class="line-space-big"></div>
+            <div class="register-button">
+              <p>
+                <button class="create-account">Tạo tài khoản</button>
+              </p>
+            </div>
+          </div>
         </div>
+      </form>
     </div>
+  </div>
+</div>
 
 
 </body>

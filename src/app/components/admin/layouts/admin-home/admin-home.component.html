@@ -61,7 +61,7 @@
                   <td>{{house.price | currency: "VND"}}</td>
                   <td>{{house.status}}</td>
                   <td>
-                    <button class="update">Sửa</button>
+                    <button routerLink="../house/update/{{house.id}}">Sửa</button>
                     <button (click)="delete(i)">Xóa</button>
                   </td>
                 </tr>
