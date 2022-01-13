@@ -8,6 +8,7 @@ import {HeaderComponent} from "./layouts/header/header.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {HouseListComponent} from "./pages/house-list/house-list.component";
 import { OrderComponent } from './pages/order/order.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -19,9 +20,10 @@ import { OrderComponent } from './pages/order/order.component';
     HouseListComponent,
     OrderComponent
   ],
-  imports: [
-    CommonModule,
-    UserRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        UserRoutingModule,
+        NgxPaginationModule
+    ]
 })
 export class UserModule { }

@@ -26,7 +26,7 @@ export class HouseCreateComponent implements OnInit {
       price: [""],
       status: [""],
       category_id: [""],
-      user_id: [""]
+      user_id: [""],
     })
     this.getAllCategory()
   }

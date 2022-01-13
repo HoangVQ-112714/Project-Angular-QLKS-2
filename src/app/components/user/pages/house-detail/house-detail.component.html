@@ -102,10 +102,10 @@
     </div>
     <div class="form-order">
       <div class="main-form">
-        <form class="show-form-in-form" action="">
+        <form class="show-form-in-form" [formGroup]="dateForm" (ngSubmit)="getOrder(house.id)">
           <br>
           <div class="day-to-day">
-            <input class="date-to-date" type="date"> đến <input class="date-to-date" type="date">
+            <input class="date-to-date" type="date" formControlName="start_date"> đến <input class="date-to-date" formControlName="end_date" type="date">
           </div>
           <button style="text-align: center" class="success-order"><i class="ti-themify-favicon"></i><strong> Đặt ngay</strong></button>
         </form>

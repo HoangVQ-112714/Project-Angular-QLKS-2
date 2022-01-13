@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-#admin-theme-content{
+#admin-theme{
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -40,10 +40,43 @@
   font-size: 35px;
   float: right;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .admin-theme-header .user-setting:hover {
-  color: red;
+  color: #d6d9db;
+}
+
+.user-setting .avatar-menu{
+  display: none;
+  background-color: rgba(33, 37, 41, 0.65);
+  width: 150px;
+}
+
+.user-setting:hover .avatar-menu{
+  display: block;
+}
+
+.user-setting .avatar-menu ul{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-setting .avatar-menu li{
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+}
+
+.user-setting .avatar-menu li a{
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.user-setting .avatar-menu li:hover{
+  background-color: #635c15;
 }
 
 /* ---HEADING */
@@ -87,7 +120,6 @@
   padding-left: 36px;
   line-height: 36px;
   text-decoration: none;
-  width: 100%;
 }
 
 .menu>ul>li>a>i{
@@ -125,82 +157,3 @@
   background-color: #d6d9db;
   /* border-radius: 10px 0 0 0; */
 }
-
-/* DataShow */
-#table-manager {
-  /* padding: 0;
-  margin: 0;
-  box-sizing: border-box; */
-  position: absolute;
-  width: 96%;
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 5px;
-  height: 700px;
-  top: 30px;
-  left: 2%;
-}
-
-#table-manager img {
-  width: 100px;
-  height: 100px;
-}
-
-#table-manager .table-header {
-  background-color: rgba(128, 128, 128, 0.514);
-  width: 100%;
-  display: inline-block;
-}
-
-#table-manager>.table-header>p {
-  position: relative;
-  left: 2%;
-}
-
-.line-big {
-  height: 10px;
-}
-
-.table-content-show>table {
-  width: 96%;
-  box-sizing: border-box;
-  text-align: left;
-  background-color: gray;
-  position: relative;
-  top: 10px;
-  left: 2%;
-}
-
-.table-content-show table th,
-.table-content-show table td {
-  padding-top: 3px;
-  line-height: 26px;
-  background-color: white;
-  display: table-cell;
-  text-align: center;
-}
-
-.table-content-show table th {
-  background-color: antiquewhite;
-  font-size: 17px;
-}
-
-.table-content-show table td button {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  font-size:20px;
-}
-
-.table-content-show table td button:hover {
-  background-color: #212529;
-  color: white;
-}
-
-
-
-/* ---DataShow */
-
-/* ---Main */
-
-/* ---CONTENT */

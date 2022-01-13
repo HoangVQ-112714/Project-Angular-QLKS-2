@@ -25,4 +25,10 @@ export class HouseService {
       environment.api_url + "/houses", data, {headers: this.loginService.setHeader()}
     )
   }
+
+  delete(id: number): Observable<any> {
+    return this.http.delete(
+      environment.api_url + "/houses" + `/${id}`
+    )
+  }
 }

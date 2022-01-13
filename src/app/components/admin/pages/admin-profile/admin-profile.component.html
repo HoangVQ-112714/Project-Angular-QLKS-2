@@ -1,1 +1,39 @@
-<p>admin-profile works!</p>
+<div id="main-profile-user">
+  <div class="title-main-user">
+    <h3><span style="color: #f65e39">{{user.name}}</span> · Thông tin tài khoản</h3>
+    <p>Cá nhân hóa tài khoản bằng việc cập nhật thông tin của bạn</p>
+  </div>
+  <div class="main-profile-user">
+    <div class="nav-left-main">
+      <ul>
+        <li><a routerLink="userProfile">Thông tin tài khoản</a></li>
+        <li><a href="">Sửa thông tin tài khoản</a></li>
+        <li><a href="">Thay đổi mật khẩu</a></li>
+        <li><a href="">Lịch sử thanh toán</a></li>
+      </ul>
+    </div>
+    <div class="nav-right-main">
+      <div class="main-profile">
+        <div class="image-profile">
+          <img src="https://cdn.pixabay.com/photo/2018/05/11/08/11/pet-3389729_1280.jpg" alt="">
+        </div>
+        <div class="show-main">
+          <h4>Tên</h4>
+          <div class="show-detail-main">{{user.name}}</div>
+        </div>
+        <div class="show-main">
+          <h4>Email</h4>
+          <div class="show-detail-main">{{user.email}}</div>
+        </div>
+        <div class="show-main">
+          <h4>Số điện thoại</h4>
+          <div class="show-detail-main">0{{user.phone}}</div>
+        </div>
+        <div class="show-main">
+          <h4>Địa chỉ</h4>
+          <div class="show-detail-main">{{user.address}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
