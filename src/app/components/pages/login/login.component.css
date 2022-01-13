@@ -1,177 +1,183 @@
 /* Reset Css */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #login-register {
-    font-family: "Quicksand", sans-serif;
-    background-color: white;
+  font-family: "Quicksand", sans-serif;
+  background-color: white;
 }
 
 /* ------- */
 
-.form-login>.in-form-login>.form-input>input {
-    width: 127%;
-    height: 74px;
+.form-login > .in-form-login > .form-input > input {
+  width: 127%;
+  height: 74px;
+  padding-left: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
 }
 
-.form-register>.in-form-register>.form-input>input {
-    width: 127%;
-    height: 57px;
+.form-register > .in-form-register > .form-input > input {
+  width: 127%;
+  height: 57px;
+  padding-left: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 17px;
 }
 
-.in-form-register>.form-input>.midle{
-    border-top: 0.5px solid #efefef;
-    border-bottom: 0.5px solid #efefef;
-    border-left: 0.5px solid #616161;
-    border-right: 0.5px solid #616161;
+.in-form-register > .form-input > .midle {
+  border-top: 0.5px solid #efefef;
+  border-bottom: 0.5px solid #efefef;
+  border-left: 0.5px solid #616161;
+  border-right: 0.5px solid #616161;
 }
 
-.in-form-login>.form-input>.first,
-.in-form-register>.form-input>.first{
-    border-bottom: 0px solid #efefef;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top: 0.5px solid #616161;
-    border-left: 0.5px solid #616161;
-    border-right: 0.5px solid #616161;
+.in-form-login > .form-input > .first,
+.in-form-register > .form-input > .first {
+  border-bottom: 0px solid #efefef;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top: 0.5px solid #616161;
+  border-left: 0.5px solid #616161;
+  border-right: 0.5px solid #616161;
 }
 
-.in-form-login>.form-input>.second,
-.in-form-register>.form-input>.second{
-    border-top: 0.1px solid #efefef;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom: 0.5px solid #616161;
-    border-left: 0.5px solid #616161;
-    border-right: 0.5px solid #616161;
+.in-form-login > .form-input > .second,
+.in-form-register > .form-input > .second {
+  border-top: 0.1px solid #efefef;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom: 0.5px solid #616161;
+  border-left: 0.5px solid #616161;
+  border-right: 0.5px solid #616161;
 }
 
-.login-button{
-    text-align: center;
-    position: relative;
-    top:50px;
-    left:0%;
+.login-button {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  left: 0%;
 }
 
-.checkbox .checkbox-in{
-    cursor: pointer;
+.checkbox .checkbox-in {
+  cursor: pointer;
 }
 
-button{
-    width: 122%;
-    height: 54px;
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
+button {
+  width: 122%;
+  height: 54px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.or-button{
-    position: relative;
-    left: 12%;
+.or-button {
+  position: relative;
+  left: 12%;
 }
 
-.login{
-    background-color:#007bff;
-    border-radius: 0.25rem;
-    color: white;
-    border-color: #007bff;
+.login {
+  background-color: #007bff;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #007bff;
 }
 
-.login-google{
-    background-color: #e82e1e;
-    border-radius: 0.25rem;
-    color: white;
-    border-color: #e82e1e;
+.login-google {
+  background-color: #e82e1e;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #e82e1e;
 }
 
-.line-space{
-    height:2px;
-    background-color:white;
+.line-space {
+  height: 2px;
+  background-color: white;
 }
 
-.line-space-big{
-    height:25px;
-    background-color:white;
+.line-space-big {
+  height: 25px;
+  background-color: white;
 }
 
-.create-account{
-    background-color:#007bff;
-    border-radius: 0.25rem;
-    color: white;
-    border-color: #007bff;
+.create-account {
+  background-color: #007bff;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #007bff;
 }
 
 /* -------- */
 
 #login-register #form-left {
-    width: 50%;
-    height: 925px;
-    background-color: white;
-    float: left;
-    position: relative;
+  width: 50%;
+  height: 925px;
+  background-color: white;
+  float: left;
+  position: relative;
 }
 
 #login-register #form-right {
-    background-image: url(https://cdn1.photostockeditor.com/c/1312/woman-standing-on-middle-of-road-people-human.jpg);
-    width: 50%;
-    height: 925px;
-    background-size: cover;
-    background-position: center;
-    float: right;
-    position: relative;
+  background-image: url(https://cdn1.photostockeditor.com/c/1312/woman-standing-on-middle-of-road-people-human.jpg);
+  width: 50%;
+  height: 925px;
+  background-size: cover;
+  background-position: center;
+  float: right;
+  position: relative;
 }
 
 .in-form-login {
-    background-color: white;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-    position: absolute;
-    width: 60%;
-    height: 70%;
-    top: 15%;
-    left: 20%;
+  background-color: white;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 15%;
+  left: 20%;
 }
 
 .in-form-register {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: absolute;
-    width: 60%;
-    height: 83%;
-    top: 10%;
-    left: 20%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 60%;
+  height: 83%;
+  top: 10%;
+  left: 20%;
 }
 
 .form-input {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    width: 60%;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 60%;
 }
 
-.in-form-register>.form-input{
-    position: absolute;
-    top: 23%;
-    left: 10%;
-    width: 60%;
-    /* height: 800px;
-    background-color: red; */
+.in-form-register > .form-input {
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  width: 60%;
+  /* height: 800px;
+  background-color: red; */
 }
 
 
 .title h2 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .title {
-    /* text-align: center; */
-    position: absolute;
-    padding: 20px 56px 0;
+  /* text-align: center; */
+  position: absolute;
+  padding: 20px 56px 0;
 }
 
-.in-form-register .role{
+.in-form-register .role {
   /* background-color: red; */
   font-family: "Quicksand", sans-serif;
   padding-left: 10px;
@@ -180,9 +186,9 @@ button{
   width: 300px;
 }
 
-::placeholder{
-    font-family: "Quicksand", sans-serif;
-    padding-left: 10px;
-    color: #aaa8a8;
-    font-size: 16px;
+::placeholder {
+  font-family: "Quicksand", sans-serif;
+  padding-left: 10px;
+  color: #aaa8a8;
+  font-size: 16px;
 }

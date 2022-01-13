@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { RegisterComponent } from './components/pages/register/register.component';
-
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 import { HouseDetailComponent } from './components/user/pages/house-detail/house-detail.component';
 import { UserProfileComponent } from './components/user/pages/user-profile/user-profile.component';
@@ -33,7 +33,8 @@ import {AdminModule} from "./components/admin/admin.module";
     HttpClientModule,
     AppRoutingModule,
     UserModule,
-    AdminModule
+    AdminModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,11 +22,10 @@
       <h2>Luxstay</h2>
     </div>
     <div class="user-setting"><i class="ti-user">
-      <!-- <ul>
-          <li>Trang chủ</li>
-          <li>Cá nhân</li>
-          <li>Đăng xuất</li>
-      </ul> -->
+      <ul class="avatar-menu">
+        <li><a routerLink="managerProfile">Cá nhân</a></li>
+        <li><a (click)="logout()">Đăng xuất</a></li>
+      </ul>
     </i></div>
   </div>
   <!-- ---HEADING -->
@@ -43,15 +42,10 @@
         <h4>Quản lý nhà</h4>
         <ul>
           <li><a routerLink="home"><i class="ti-home"></i> Danh sách nhà</a></li>
-          <li><a href=""><i class="ti-home"></i> Nhà đang thuê</a></li>
           <li><a routerLink="house/create"><i class="ti-cloud-up"></i> Thêm nhà mới</a></li>
         </ul>
         <div class="line-beauty"></div>
-        <h4>Quản lý người thuê</h4>
-        <ul>
-          <li><a href=""><i class="ti-user"></i> Danh sách người thuê</a></li>
-          <li><a href=""><i class="ti-timer"></i> Danh sách đăng ký thuê</a></li>
-        </ul>
+
         <div class="line-beauty"></div>
         <h4>Hỗ trợ</h4>
         <ul>

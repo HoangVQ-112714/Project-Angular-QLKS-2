@@ -17,32 +17,29 @@
               <thead>
               <tr>
                 <th>Mã số nhà</th>
-                <th>Tên Chủ hộ</th>
                 <th>Tên Căn hộ</th>
                 <th>Địa chỉ</th>
                 <th>Ngày thuê</th>
                 <th>Ngày trả</th>
-                <th>Giá cho thuê</th>
                 <th>Tổng tiền</th>
                 <th>Trạng thái</th>
                 <th>Hành động</th>
               </tr>
               </thead>
               <tbody>
-              <tr>
-                <td>01</td>
-                <td>Biệt thự ven biển</td>
-                <td>Biệt thự ven biển</td>
-                <td>R5A Royalcity - Nguyễn Trãi - Thanh Xuân - Hà Nội</td>
-                <td>11/11/1111</td>
-                <td>13/11/1111</td>
-                <td>2.000.000đ</td>
-                <td>6.000.000đ</td>
-                <td>Chờ xử lý</td>
+              <tr *ngFor="let order of orders|paginate: { itemsPerPage: 5, currentPage: p }; index as i">
+                <td>{{order.id}}</td>
+                <td>{{order.house.name}}</td>
+                <td>{{order.house.address}}</td>
+                <td>{{order.start_date}}</td>
+                <td>{{order.end_date}}</td>
+                <td>{{order.price}}</td>
+                <td>{{order.status}}</td>
                 <td>
                   <button class="delete">Hủy</button>
                 </td>
               </tr>
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
               </tbody>
             </table>
           </div>
