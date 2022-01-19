@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HouseService} from "../../../../services/house/house.service";
 import {Router} from "@angular/router";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {CategoryService} from "../../../../services/category/category.service";
 
 @Component({
@@ -11,22 +11,34 @@ import {CategoryService} from "../../../../services/category/category.service";
 })
 export class HouseCreateComponent implements OnInit {
   houses: any = [];
-  createForm: FormGroup | any
+  createForm: FormGroup = new FormGroup({
+    name: new FormControl(),
+    address: new FormControl(),
+    bedroom: new FormControl(),
+    bathroom: new FormControl(),
+    description: new FormControl(),
+    price: new FormControl(),
+    status: new FormControl(),
+    category_id: new FormControl(),
+    user_id: new FormControl(),
+    image: new FormControl()
+  })
   categories: any = []
 
   constructor(private houseService: HouseService, private router: Router, private fb: FormBuilder, private categoyService: CategoryService) { }
 
   ngOnInit(): void {
     this.createForm = this.fb.group({
-      name: [""],
-      address: [""],
-      bedroom: [""],
-      bathroom: [""],
-      description: [""],
-      price: [""],
-      status: [""],
-      category_id: [""],
-      user_id: [""],
+      name: ["", [Validators.required]],
+      address: ["", [Validators.required]],
+      bedroom: ["", [Validators.required]],
+      bathroom: ["", [Validators.required]],
+      description: ["", [Validators.required]],
+      price: ["", [Validators.required]],
+      status: ["", [Validators.required]],
+      category_id: ["", [Validators.required]],
+      user_id: ["", [Validators.required]],
+      image: ["", [Validators.required]]
     })
     this.getAllCategory()
   }
@@ -44,6 +56,30 @@ export class HouseCreateComponent implements OnInit {
     this.categoyService.getAll().subscribe(res => {
       this.categories = res
     })
+  }
+  get name() {
+    return this.createForm.get("name")
+  }
+  get address() {
+    return this.createForm.get("address")
+  }
+  get bedroom() {
+    return this.createForm.get("bedroom")
+  }
+  get bathroom() {
+    return this.createForm.get("bathroom")
+  }
+  get description() {
+    return this.createForm.get("description")
+  }
+  get price() {
+    return this.createForm.get("price")
+  }
+  get status() {
+    return this.createForm.get("status")
+  }
+  get image() {
+    return this.createForm.get("image")
   }
 
 

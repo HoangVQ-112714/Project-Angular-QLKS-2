@@ -21,5 +21,10 @@ export class OrderService {
       environment.api_url + "/orders", {headers: this.loginService.setHeader()}
     )
   }
+  deleteOrder(id: number) {
+    return this.http.delete(
+      environment.api_url + "/orders" + `/${id}`, {headers: this.loginService.setHeader()}
+    )
+  }
 
 }

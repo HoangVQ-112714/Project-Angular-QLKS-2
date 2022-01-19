@@ -1,4 +1,8 @@
 <!-- CONTENT -->
+<div class="line-big-2"></div>
+<div class="search-box">
+  <input [(ngModel)]="term" type="text" class="search-input" placeholder="Tìm kiếm tại đây....">
+</div>
 <div id="content-homestay">
   <div class="button-choice">
     <button>Hủy phòng linh hoạt</button>
@@ -22,9 +26,9 @@
       <div class="line-big"></div>
       <div class="address-top-area">
 
-        <div routerLink="{{house.id}}" class="show-product" *ngFor="let house of houses; index as i">
+        <div routerLink="{{house.id}}" class="show-product" *ngFor="let house of houses | filter: term; index as i">
           <div class="address-area-01a">
-            <img src="https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png">
+            <img src="{{house.image}}">
           </div>
           <div class="content-under-image">
             <h5>{{house.name}}</h5>

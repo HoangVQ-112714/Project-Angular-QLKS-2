@@ -26,8 +26,18 @@
                     <div class="line-space-big"></div>
                     <div class="form-input">
                         <input class="first" type="text" formControlName="email"  placeholder="Tài khoản đăng nhập">
+                      <div *ngIf="errorEmail?.invalid && (errorEmail?.dirty || errorEmail?.touched)">
+                        <p style="color: red" *ngIf="errorEmail?.errors?.['required']">
+                          Email không được để trống
+                        </p>
+                      </div>
 
                         <input class="second" type="password" formControlName="password"  placeholder="Mật khẩu đăng nhập">
+                      <div *ngIf="errorPassword?.invalid && (errorPassword?.dirty || errorPassword?.touched)">
+                        <p style="color: red" *ngIf="errorPassword?.errors?.['required']">
+                          Mật khẩu không được để trống
+                        </p>
+                      </div>
 
 
 

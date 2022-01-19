@@ -9,6 +9,7 @@ import {HouseService} from "../../../../services/house/house.service";
 })
 export class HouseListComponent implements OnInit {
   houses: any = []
+  term: any;
 
   constructor(private houseService: HouseService) { }
 

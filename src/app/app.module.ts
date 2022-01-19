@@ -9,6 +9,7 @@ import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import { HouseDetailComponent } from './components/user/pages/house-detail/house-detail.component';
 import { UserProfileComponent } from './components/user/pages/user-profile/user-profile.component';
 
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
@@ -34,8 +35,10 @@ import {AdminModule} from "./components/admin/admin.module";
     AppRoutingModule,
     UserModule,
     AdminModule,
-    NgxPaginationModule
-  ],
+    NgxPaginationModule,
+    Ng2SearchPipeModule
+
+],
   providers: [],
   bootstrap: [AppComponent]
 })

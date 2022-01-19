@@ -9,15 +9,30 @@
           <tr>
             <h3 class="title"><strong>Tên sản phẩm</strong></h3>
             <input type="text" formControlName="name">
+            <div *ngIf="name?.invalid && (name?.dirty || name?.touched)">
+              <p style="color: red" *ngIf="name?.errors?.['required']">
+                Không được để trống
+              </p>
+            </div>
           </tr>
           <tr>
             <h3 class="title"><strong>Giá bán</strong></h3>
             <input type="number" formControlName="price">
           </tr>
+          <div *ngIf="price?.invalid && (price?.dirty || price?.touched)">
+            <p style="color: red" *ngIf="price?.errors?.['required']">
+              Không được để trống
+            </p>
+          </div>
           <tr>
             <h3 class="title"><strong>Địa chỉ</strong></h3>
             <input type="text" formControlName="address">
           </tr>
+          <div *ngIf="address?.invalid && (address?.dirty || address?.touched)">
+            <p style="color: red" *ngIf="address?.errors?.['required']">
+              Không được để trống
+            </p>
+          </div>
           <tr>
             <h3 class="title"><strong>Loại nhà</strong></h3>
             <p><select class="select-option" formControlName="category_id" >
@@ -28,6 +43,11 @@
             <h3 class="title"><strong>Mô tả thêm</strong></h3>
             <textarea name=""  cols="75" rows="10" formControlName="description"></textarea>
           </tr>
+          <div *ngIf="description?.invalid && (description?.dirty || description?.touched)">
+            <p style="color: red" *ngIf="description?.errors?.['required']">
+              Không được để trống
+            </p>
+          </div>
         </table>
       </div>
 
@@ -36,10 +56,20 @@
           <tr>
             <h3 class="title"><strong>Số phòng ngủ</strong></h3>
             <input type="number" formControlName="bedroom">
+            <div *ngIf="bedroom?.invalid && (bedroom?.dirty || bedroom?.touched)">
+              <p style="color: red" *ngIf="bedroom?.errors?.['required']">
+                Không được để trống
+              </p>
+            </div>
           </tr>
           <tr>
             <h3 class="title"><strong>Số phòng tắm</strong></h3>
             <input type="number" formControlName="bathroom">
+            <div *ngIf="bathroom?.invalid && (bathroom?.dirty || bathroom?.touched)">
+              <p style="color: red" *ngIf="bathroom?.errors?.['required']">
+                Không được để trống
+              </p>
+            </div>
           </tr>
 <!--          <tr>-->
 <!--            <h3 class="title"><strong>Trạng thái</strong></h3>-->
@@ -56,8 +86,14 @@
 <!--          </tr>-->
           <tr>
             <h3 class="title"><strong>Thêm ảnh sản phẩm</strong></h3>
-            <input type="text" formControlName="avatar">
+            <input type="text" formControlName="image">
+            <div *ngIf="image?.invalid && (image?.dirty || image?.touched)">
+              <p style="color: red" *ngIf="image?.errors?.['required']">
+                Không được để trống
+              </p>
+            </div>
           </tr>
+
           <tr>
             <p><button>Thêm sản phẩm mới</button></p>
           </tr>

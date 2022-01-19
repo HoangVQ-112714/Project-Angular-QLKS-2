@@ -36,7 +36,7 @@
                 <td>{{order.price}}</td>
                 <td>{{order.status}}</td>
                 <td>
-                  <button class="delete">Hủy</button>
+                  <button onclick="confirm('Bạn có chắc muốn hủy không ?')" (click)="deleteOrder(i)">Hủy</button>
                 </td>
               </tr>
               <pagination-controls (pageChange)="p = $event"></pagination-controls>
