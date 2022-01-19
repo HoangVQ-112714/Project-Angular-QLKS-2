@@ -21,5 +21,14 @@ export class OrderComponent implements OnInit {
       this.orders = res
     })
   }
+  deleteOrder(i: any) {
+    let order = this.orders[i];
+    this.orderService.deleteOrder(order.id).subscribe(() => {
+      this.orders = this.orders.filter(
+          (o: { id: any; }) => o.id !== order.id
+      )
+    })
+  }
+
 
 }

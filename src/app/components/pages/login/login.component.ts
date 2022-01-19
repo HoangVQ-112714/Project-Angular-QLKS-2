@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
 import {LoginService} from "../../../services/auth/login.service";
 
@@ -9,7 +9,10 @@ import {LoginService} from "../../../services/auth/login.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup | any
+  loginForm: FormGroup = new FormGroup({
+    email: new FormControl(),
+    password: new FormControl(),
+  })
   errorLogin: any
 
 
@@ -18,8 +21,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      email: [""],
-      password: [""]
+      email: ["", [Validators.required, Validators.email]],
+      password: ["", [Validators.required]]
     })
   }
 
@@ -32,16 +35,24 @@ export class LoginComponent implements OnInit {
         this.router.navigate(["admin/home"])
         localStorage.setItem("token", token);
         localStorage.setItem("user", JSON.stringify(res.user))
+
+      }
+      if (res.error) {
+        this.errorLogin = res.message
       }
       if (res.user.role == "User") {
         this.router.navigate(["home"])
         localStorage.setItem("token", token);
         localStorage.setItem("user", JSON.stringify(res.user))
       }
-      if (res.error) {
-        this.errorLogin = res.message
-      }
+
     })
+  }
+  get errorEmail() {
+    return this.loginForm.get("email")
+  }
+  get errorPassword() {
+    return this.loginForm.get("password")
   }
   // get errorlogin() {
   //   this.loginForm?.get("title")

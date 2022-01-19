@@ -49,11 +49,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="let house of houses|paginate: { itemsPerPage: 5, currentPage: p }; let i = index">
+                <tr *ngFor="let house of houses|paginate: { itemsPerPage: 3, currentPage: p }; let i = index">
                   <td>{{house.id}}</td>
                   <td>{{house.name}}</td>
                   <td><img
-                    src="https://sieupet.com/sites/default/files/pictures/images/cho-corgi-4.jpg"
+                    src="{{house.image}}"
                     alt=""></td>
                   <td>{{house.address}}</td>
                   <td>{{house.bedroom}}</td>
@@ -62,7 +62,7 @@
                   <td>{{house.status}}</td>
                   <td>
                     <button routerLink="../house/update/{{house.id}}">Sửa</button>
-                    <button (click)="delete(i)">Xóa</button>
+                    <button  onclick="confirm('Bạn có muốn xóa không ?')" (click)="delete(i)">Xóa</button>
                   </td>
                 </tr>
                 <pagination-controls (pageChange)="p = $event"></pagination-controls>

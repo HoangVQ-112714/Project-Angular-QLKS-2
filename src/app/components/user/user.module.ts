@@ -9,6 +9,8 @@ import {HomeComponent} from "./pages/home/home.component";
 import {HouseListComponent} from "./pages/house-list/house-list.component";
 import { OrderComponent } from './pages/order/order.component';
 import {NgxPaginationModule} from "ngx-pagination";
+import {FormsModule} from "@angular/forms";
+import {Ng2SearchPipeModule} from "ng2-search-filter";
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import {NgxPaginationModule} from "ngx-pagination";
     imports: [
         CommonModule,
         UserRoutingModule,
-        NgxPaginationModule
+        NgxPaginationModule,
+        FormsModule,
+      Ng2SearchPipeModule
     ]
 })
 export class UserModule { }
